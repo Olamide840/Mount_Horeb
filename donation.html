@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header>
+        <p class="CHURCH">CHURCH NEWSLETTER | ISSUE #25</p>
+        <p class="pap">AUGUST 2025</p>
+    </header>
+    <div>
+        <main>
+            <h1>Welcome to the Donation Page to Support Our Ministry.</h1>
+            <div class="container">
+                <h1>Choose Your Payment Option</h1>
+                <div id="payment-form">
+                    <div class="payment-options">
+                        <div class="payment-option" onclick="selectPayment('bank-transfer')">
+                            Pay with Bank Transfer
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('atm')">
+                            Pay with ATM
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('paypal')">
+                            Pay with PayPal
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('cash-app')">
+                            Pay with Cash App
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('credit-card')">
+                            Pay with Credit/Debit Card
+                        </div>
+                    </div>
+                
+                    <div id="additional-info">
+                        <div class="payment-method-info" id="bank-transfer-info">
+                            <div class="info-title">Bank Transfer</div>
+                             <p>Use your bank's online services to transfer funds directly to our account. Please allow 1-2 business days for processing. Account to pay to is <span> 2019912992 First Bank. Account name is Ajayi Philip Adekunle.</span> God bless you as you Donate.</p>
+                        </div>
+                        <div class="payment-method-info" id="atm-info">
+                            <div class="info-title">ATM Payment</div>
+                            <p>Use an ATM machine to make the payment. Please provide the receipt number for verification.</p>
+                        </div>
+                        <div class="payment-method-info" id="paypal-info">
+                            <div class="info-title">PayPal</div>
+                            <p>This option is not currently available at our Country(Nigeria). Please try other Method.</p>
+                        </div>
+                        <div class="payment-method-info" id="cash-app-info">
+                            <div class="info-title">Cash App</div>
+                            <p>This option is not currently available at our Country(Nigeria). Please try other Method.</p>
+                        </div>
+                        <div class="payment-method-info" id="credit-card-info">
+                            <div class="info-title">Credit/Debit Card</div>
+                            <p>This option is not currently available. Please try other Method.</p>
+                        </div>
+                    </div>
+                    
+                    <button onclick="submitPayment()">Proceed with Payment</button>
+                </div>
+        </main>
+        <div class="confirmation-message" id="confirmation-message" style="display:none;
+        background: #fff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;padding: 30px;
+        width: 100%;max-width: 600px;margin: 50px auto;">
+            <h2 style="color: darkblue;">Payment on Pending... <div class="spinner"></div></h2>
+            <br>
+            <p>Please send your Transaction receipt to us  or our <a href="mailto:ajayiphilip830@gmail.com" style="font-style: italic;color: darkblue;">Email</a></p>
+            <br>
+            <p>Your confirmation number is: <span class="confirmation-id" id="confirmation-id" style="color: darkblue;"></span></p>
+            <br>
+            <p>We will notify you once your payment has been fully processed.</p>
+        </div>
+
+        <section>
+            <p>* Kindly take note of the below instructions before Performing any Transaction on this Page.</p>
+            <li>Make Sure your Card has be Confirmed and approved for Legal Transactions before making any sort of Transaction on this Page.</li>
+            <li>Be Sure to confirm that a single Transaction has been confirmed before performing any other Transaction.</li>
+            <li>Do well to Check the correct details of the transaction you are making,as wrong details/wrong transaction(s) will be at owner's Risk.</li>
+            <li>Please do well to send your transaction ID number and your transaction receipt to our <a href="mailto:ajayiphilip830@gmail.com">email</a> to confirm your Transaction.</li>
+            <li>If you dont have the above payment method,<i><a href="donates.html">Click here</a></i> to add your Preferred payment method.</li>
+        </section>
+    </div>
+    <script src="donation.js"></script>
+</body>
+</html>

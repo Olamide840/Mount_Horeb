@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #444;
+    color: #fff;
+    font-family: sans-serif;
+}
+header{
+    font-family: cursive;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24%;
+    word-spacing: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+.main {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 27px;
+    max-width: 800px;
+}
+.nav-bar {
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+.nav-bar a{
+    color: #fff;
+    font-style: oblique;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+}
